@@ -1,18 +1,16 @@
 package org.mrwolfedev.insightspark.data.remote.reposImplementation.NewsRepositoryImpl
 
+import io.ktor.client.call.body
+import io.ktor.client.plugins.ClientRequestException
+import io.ktor.client.plugins.RedirectResponseException
+import io.ktor.client.plugins.ServerResponseException
+import io.ktor.client.request.get
+import io.ktor.client.request.parameter
+import io.ktor.client.statement.bodyAsText
 import org.mrwolfedev.insightspark.data.remote.dto.NewsDTO
 import org.mrwolfedev.insightspark.data.services.NewsAPIServices
 import org.mrwolfedev.insightspark.domain.repository.News.HeadlineRepository
-import io.ktor.client.request.*
-import io.ktor.client.call.body
-import io.ktor.client.plugins.ClientRequestException
-import io.ktor.client.plugins.ServerResponseException
-import io.ktor.client.plugins.RedirectResponseException
-import io.ktor.client.statement.bodyAsText
 import org.mrwolfedev.insightspark.domain.util.Result
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.withContext
-import kotlinx.serialization.json.Json
 
 class HeadlineRepositoryImpl(
     private val apiServices: NewsAPIServices
