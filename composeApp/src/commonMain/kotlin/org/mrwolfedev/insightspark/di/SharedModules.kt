@@ -10,6 +10,10 @@ import org.mrwolfedev.insightspark.domain.useCase.NewsUseCase.Headline.GetNewsHe
 import com.wolf.news.domain.useCase.NewsUseCase.Headline.HeadlineRepositoryUseCase
 import org.koin.dsl.module
 import org.koin.core.module.Module
+import org.mrwolfedev.insightspark.data.remote.reposImplementation.NewsRepositoryImpl.NewsRepositoryImpl
+import org.mrwolfedev.insightspark.domain.repository.News.NewsRepository
+import org.mrwolfedev.insightspark.domain.useCase.NewsUseCase.News.GetNewsDataByTopicUseCase
+import org.mrwolfedev.insightspark.domain.useCase.NewsUseCase.News.NewsRepositoryUseCase
 import org.mrwolfedev.insightspark.presentation.NewsViewModel.NewsViewModel
 val networkModule = module {
     single { NewsAPIServices(apiKey = "4bcb23f7dc544a22917413ad24bc77fc") }
@@ -17,12 +21,16 @@ val networkModule = module {
 
 val repositoryModule = module {
     single<HeadlineRepository> { HeadlineRepositoryImpl(get()) }
+    single<NewsRepository>{ NewsRepositoryImpl(get()) }
 }
 
 val useCaseModule = module {
     singleOf(::GetNewsHeadlineDataByCountryUseCase)
     singleOf(::GetNewsHeadlineDataByCategoryUseCase)
     singleOf(::HeadlineRepositoryUseCase)
+    singleOf(::GetNewsDataByTopicUseCase)
+    singleOf(::NewsRepositoryUseCase)
+
 
 }
 
