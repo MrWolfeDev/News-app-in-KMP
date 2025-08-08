@@ -1,4 +1,4 @@
-package org.mrwolfedev.insightspark.presentation.component
+package org.mrwolfedev.insightspark.presentation.Home
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
@@ -22,8 +22,8 @@ import io.kamel.image.KamelImage
 import io.kamel.image.asyncPainterResource
 import n.composeapp.generated.resources.Res
 import n.composeapp.generated.resources.nothumbl
-import n.composeapp.generated.resources.unknown
 import org.mrwolfedev.insightspark.domain.model.ShowNewsItem
+import org.mrwolfedev.insightspark.presentation.component.rememberDeviceInfo
 
 @Composable
 fun Explore(

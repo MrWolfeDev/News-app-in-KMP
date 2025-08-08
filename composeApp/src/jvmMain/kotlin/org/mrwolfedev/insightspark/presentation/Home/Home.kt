@@ -29,13 +29,7 @@ fun HomeJVM(
     var searchQuery by remember { mutableStateOf("") }
     val uiState by viewModel.uiState.collectAsState()
 
-//    // Log UI state changes
-//    LaunchedEffect(uiState) {
-//        println("DEBUG: UI State changed - isLoading: ${uiState.isLoading}")
-//        println("DEBUG: Trending news count: ${uiState.trendingNews?.size}")
-//        println("DEBUG: Category news count: ${uiState.categoryNews?.size}")
-//        println("DEBUG: Error: ${uiState.error}")
-//    }
+
 
     // Load initial data
     LaunchedEffect(Unit) {

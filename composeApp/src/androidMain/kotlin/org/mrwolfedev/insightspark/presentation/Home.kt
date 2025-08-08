@@ -24,7 +24,7 @@ import org.mrwolfedev.insightspark.presentation.Home.SImpalData.sampleNewsItems
 import org.mrwolfedev.insightspark.presentation.component.CategoryRow
 import org.mrwolfedev.insightspark.presentation.component.Heading
 import org.mrwolfedev.insightspark.presentation.component.SearchBar
-import org.mrwolfedev.insightspark.presentation.component.ShowNewsSmall
+import org.mrwolfedev.insightspark.presentation.Home.ShowNewsSmall
 import org.mrwolfedev.insightspark.presentation.component.rememberDeviceInfo
 
 
