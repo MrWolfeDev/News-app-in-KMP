@@ -108,7 +108,7 @@ This project is licensed under the **MIT License**.
 ## 🙌 Acknowledgments
 
 - 💡 Powered by [Kotlin Multiplatform](https://kotlinlang.org/lp/multiplatform/)
-- 🛠️ Built with ❤️ and clean architecture principles
+- 🛠️ Built with ❤️ nice and clean architecture principles
 
 ---
 
