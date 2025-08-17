@@ -90,10 +90,10 @@ cd News-app-in-KMP
       <img src="https://github.com/user-attachments/assets/856394fb-6aa0-442d-a1e5-5890dd61a42f" alt="Home Screen" width="300" />
     </td>
     <td align="center">
-      <img src="https://github.com/user-attachments/assets/33c0ca0e-961d-43ca-99af-67e5046724c8" alt="Article Details Screen" width="300" />
+      <img src="https://github.com/user-attachments/assets/33c0ca0e-961d-43ca-99af-67e5046724c8" alt=" Home Screen" width="300" />
     </td>
     <td align="center">
-      <img src="https://github.com/user-attachments/assets/1f4f07f8-44a8-4564-8a84-073422666ece" alt="Home Screen" width="300" />
+      <img src="https://github.com/user-attachments/assets/1f4f07f8-44a8-4564-8a84-073422666ece" alt="Article Details Screen" width="300" />
     </td>
   </tr>
 </table>
